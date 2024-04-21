@@ -75,6 +75,10 @@ let avatar = "./assets/img/avartar.jpg";
 
 var Minh2021065 = new Student(name, year, educate, program, institute, status, sex, classs, grade, email);
 
+var initialInfor = JSON.parse(localStorage.getItem('student'));
+
+getStudenInfo(initialInfor);
+
 function onOkClick() {
     let name = document.getElementById("name").value;
     let year = document.getElementById("year").value;
@@ -101,7 +105,7 @@ function onCancelClick() {
 }
 
 function onResetClick() {
-    let Minh2021065 = JSON.parse(localStorage.getItem('student'));
+    let Minh2021065 = JSON.parse(localStorage.getItem('InitialInformation'));
         this.document.getElementById('name').value = Minh2021065.name;
         this.document.getElementById('year').value = Minh2021065.year;
         this.document.getElementById('educate').value = Minh2021065.educate;
@@ -114,6 +118,8 @@ function onResetClick() {
         this.document.getElementById('email').value = 
         Minh2021065.email;
         this.document.getElementById('avatar').src = Minh2021065.avatar;
+        getStudenInfo(Minh2021065);
+        onOkClick();
 }
 
 var imageUpload = {
