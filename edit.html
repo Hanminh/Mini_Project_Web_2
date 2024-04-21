@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./assets/reset.css">
+        <link rel="stylesheet" href="./assets/styletestedit.css">
+    </head>
+    <script src="assets/javascript/edit.js"></script>
+<body>
+    <div class="head" style="height: 10000px;">
+        <div class="left-menu">
+            <div class="menu">
+                <div class="name heading">
+                    <div class="avatar-small">
+                        <img src="./assets/img/avartar.jpg" alt="avatar">
+                    </div>
+                    <h3>TRẦN HÀN MINH</h3>
+                </div>
+                <ul class="list-option">
+                    <li>
+                        <a href="#!">Thư báo</a>
+                        <div class="noti">1</div>
+                    </li>
+                    <li>
+                        <a href="#!">Đổi mật khẩu</a>
+                    </li>
+                    <li>
+                        <a href="#!">Cấp lại mật khẩu Email trường</a>
+                    </li>
+                    <li>
+                        <a href="#!">Thoát đăng nhập</a>
+                    </li>
+                    <li>
+                        <a href="#!">Thông tin mật khẩu Email cấp mới</a>
+                    </li>
+                    <li>
+                        <a href="#!">Xác nhận khai báo y tế</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu">
+                <div class="heading">
+                    <h3>
+                        QUẢN LÝ HỒ SƠ SINH VIÊN
+                    </h3>
+                </div>
+
+                <ul class="list-option">
+                    <li>
+                        <a href="!#">Thông tin sinh viên</a>
+                    </li>
+                    <li>
+                        <a href="!#">Cập nhật thông tin cá nhân</a>
+                    </li>
+                    <li>
+                        <a href="!#">Thông tin lớp sinh viên</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu">
+                <div class="heading">
+                    <h3>ĐÀO TẠO</h3>
+                </div>
+
+                <ul class="list-option">
+                    <li>
+                        <a href="!#">Chương trình đào tạo</a>
+                    </li>
+                    <li>
+                        <a href="!#">Kế hoạch học tập</a>
+                    </li>
+                    <li>
+                        <a href="!#">Kết quả học tập</a>
+                    </li>
+                    <li>
+                        <a href="!#">Đồ án tốt nghiệp</a>
+                    </li>
+                    <li>
+                        <a href="!#">Thời khóa biểu tạm thời</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu">
+                <div class="heading">
+                    <h3>TƯ VẤN TRỰC TUYẾN</h3>
+                </div>
+                <ul class = "list-option">
+                    <li>
+                        <a href="!#">Hỏi đáp - Tư vấn trực tuyến</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu">
+                <div class="heading">
+                    <h3>TÀI CHÍNH HỌC VỤ</h3>
+                </div>
+
+                <ul class="list-option">
+                    <li>
+                        <a href="!#">Thông tin công nợ học phí</a>
+                    </li>
+                    <li>
+                        <a href="!#">Thanh toán học phí trực tuyến</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu">
+                <div class="heading">
+                    <h3>DỊCH VỤ HÀNH CHÍNH</h3>
+                </div>
+
+                <ul class="list-option">
+                    <li>
+                        <a href="!#">ĐK cấp giấy tờ</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="main-content">
+            <div class="title main-title">
+                <h2>THÔNG TIN CÁ NHÂN</h2>
+            </div>
+
+            <div class="student-info ">
+                <div class="title sub-title info">
+                    <h2 class = "student-info-header">
+                        <div>
+                            THÔNG TIN SINH VIÊN
+                            <a href="edit.html">
+                                <img  src="./assets/img/8666681_edit_icon.svg" alt="" class="icon">
+                            </a>
+                        </div>
+                        <div class="tool-edit">
+                            <span class="ok tool" onclick="onOkClick()">OK</span>
+                            <span class="cancel tool" onclick="onCancelClick()">Cancel</span>
+                            <span class="reset tool" onclick="onResetClick()">Reset</span>
+                        </div>
+                    </h2>
+
+                </div>
+                
+                <div class="info">
+                    <div class="big-avatar">
+                        <img src="./assets/img/avartar.jpg" alt="" id="avatar">
+                        <p>MSSV:20210605</p>
+                        <form enctype="multipart/form-data" style="display: block;" class="edit-img">
+                            <input id="imageUpload" type="file" accept="image/*">
+                            <div class="btn-upload-img" onclick="onImgClick()">Upload</div>
+                        </form>
+                    </div>
+                <form action="" class="edit-info">  
+                    <div class="sub-info">
+                        <div class="content">
+                            <div class="form-item">
+                                <label class="label" for="name">Họ và tên: </label>
+                                <input type="text" class="name" id="name" required />
+                              </div>
+                        </div>
+
+                        <div class="content">
+                            <div class="form-item">
+                                <label class="label" for="year">Năm vào trường:</label>
+                                <input type="number" class="year" id="year" required />
+                              </div>
+                        </div>
+                        <div class="content">
+                            <div class="form-item">
+                                <label class="label" for="educate">Bậc đào tạo:</label>
+                                <input type="text" class="educate" id="educate" required />
+                              </div>
+                        </div>
+                        <div class="content">
+                            <div class="form-item">
+                                <label class="label" for="program">Chương trình đào tạo:</label>
+                                <input type="text" class="program" id="program" required />
+                              </div>
+                        </div>
+                        <div class="content">
+                            <div class="form-item">
+                                <label for="institute" class="label">Viện đào tạo</label>
+                                <input type="text" class="institute" id="institute" required />
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="form-item">
+                                <label for="status" class="label">Tình trạng học tập:</label>
+                                <select name="status" id="status" class="status" required>
+                                    <option value="Học">Học</option>
+                                    <option value="Thôi học">Thôi học</option>
+                                    <option value="Ra trường">Ra trường</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sub-info">
+                        <div class="form-item">
+                            <label for="sex" class="label">Giới tính:</label>
+                            <select name="sex" class="sex" id="sex" required>
+                              <option value="Nam">Nam</option>
+                              <option value="Nữ">Nữ</option>
+                            </select>
+                          </div>
+
+                        <div class="form-item">
+                            <div class="form-item">
+                                <label for="class" class="label">Lớp:</label>
+                                <input type="text" class="class" id="class" required />
+                            </div>
+                        </div>
+                        
+                        <div class="content">
+                            <div class="form-item">
+                                <label for="grade" class="label">Khóa:</label>
+                                <select name="grade" id="grade" class="grade" required>
+                                  <option value="63">K63</option>
+                                  <option value="64">K64</option>
+                                  <option value="65">K65</option>
+                                  <option value="66">K66</option>
+                                  <option value="67">K67</option>
+                                  <option value="68">K68</option>
+                                  <option value="69">K69</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="form-item">
+                                <label for="email" class="label">Email:</label>
+                                <input type="email" class="email" id="email" required />
+                            </div>
+                        </div>
+                    </div>
+                </form>  
+
+                </div>
+            </div>
+
+            <div class="student-info ">
+                <div class="title sub-title info">
+                    <h2>
+                        THÔNG TIN HỌC TẬP
+                    </h2>
+                </div>
+                
+                <div class="info">
+                    <div class="sub-info">
+                        <div class="content">
+                            <strong>Tổng kết học kỳ:</strong>
+                            <span>20231</span>
+                        </div>
+
+                        <div class="content">
+                            <strong>Trung bình tích lũy:</strong>
+                            <span>1.0</span>
+                        </div>
+                        <div class="content">
+                            <strong>Số TC nợ đăng ký:</strong>
+                            <span>0</span>
+                        </div>
+                    </div>
+
+                    <div class="sub-info">
+                        <div class="content">
+                            <strong>Số TC tích lũy: </strong>
+                            <span>90</span>
+                        </div>
+                        <div class="content">
+                            <strong>Trình độ sinh viên:</strong>
+                            <span>3</span>
+                        </div>
+                        <div class="content">
+                            <strong>Mức độ cảnh cáo:</strong>
+                            <span>0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="student-info ">
+                <div class="title sub-title info">
+                    <h2>
+                        THÔNG TIN CÁ NHÂN
+                    </h2>
+                </div>
+                
+                <div class="info">
+                    <div class="sub-info">
+                        <div class="content">
+                            <strong>Dân tộc:</strong>
+                            <span>KINH</span>
+                        </div>
+                        <div class="content">
+                            <strong>Năm TN cấp 3:</strong>
+                            <span>2021</span>
+                        </div>
+                        <div class="content">
+                            <strong>Địa chỉ:</strong>
+                            <span>PHƯỜNG TRẦN HƯNG ĐẠO, THÀNH PHỐ PHỦ LÝ, TỈNH HÀ NAM</span>
+                        </div>
+                        <div class="content">
+                            <strong>Số CMTND:</strong>
+                            <span>035***24</span>
+                        </div>
+                        <div class="content">
+                            <strong>Nơi cấp:</strong>
+                            <span>HÀ NAM</span>
+                        </div>
+                        <div class="content">
+                            <strong>Họ tên bố:</strong>
+                            <span>TRẦN CÔNG HOÀN</span>
+                        </div>
+                        <div class="content">
+                            <strong>Nghề nghiệp:</strong>
+                            <span>CỬ NHÂN KINH TẾ</span>
+                        </div>
+                        <div class="content">
+                            <strong>Điện thoại:</strong>
+                            <span>091***09</span>
+                        </div>
+                        <div class="content">
+                            <strong>Email:</strong>
+                            <span>KHÔNG CÓ</span>
+                        </div>
+                    </div>
+
+                    <div class="sub-info">
+                        <div class="content">
+                            <strong>Tôn giáo:</strong>
+                            <span>KHÔNG</span>
+                        </div>
+                        <div class="content">
+                            <strong>Trường THPT:</strong>
+                            <span>THPT CHUYÊN BIÊN HÒA HÀ NAM</span>
+                        </div>
+                        <div class="content">
+                            <strong>Hộ khẩu:</strong>
+                            <span>PHƯỜNG MINH KHAI, THÀNH PHỐ PHỦ LÝ, TỈNH HÀ NAM</span>
+                        </div>
+                        <div class="content">
+                            <strong>Họ tên mẹ:</strong>
+                            <span>TRẦN THỊ OANH</span>
+                        </div>
+                        <div class="content">
+                            <strong>Năm sinh:</strong>
+                            <span>1975</span>
+                        </div>
+                        <div class="content">
+                            <strong>Nghề nghiệp:</strong>
+                            <span>ĐIỀU DƯỠNG</span>
+                        </div>
+                        <div class="content">
+                            <strong>Điện thoại:</strong>
+                            <span>086***32</span>
+                        </div>
+                        <div class="content">
+                            <strong>Email:</strong>
+                            <span>KHÔNG CÓ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var Minh2021065 = JSON.parse(localStorage.getItem('student'));
+        this.document.getElementById('name').value = Minh2021065.name;
+        this.document.getElementById('year').value = Minh2021065.year;
+        this.document.getElementById('educate').value = Minh2021065.educate;
+        this.document.getElementById('program').value = Minh2021065.program;
+        this.document.getElementById('institute').value = Minh2021065.institute;
+        this.document.getElementById('status').value = Minh2021065.status;
+        this.document.getElementById('sex').value = Minh2021065.sex;
+        this.document.getElementById('class').value = Minh2021065.classs;
+        this.document.getElementById('grade').value = Minh2021065.grade; 
+        this.document.getElementById('email').value = 
+        Minh2021065.email;
+        this.document.getElementById('avatar').src = Minh2021065.avatar;
+    </script>
+</body>
+</html>

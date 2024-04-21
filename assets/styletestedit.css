@@ -1,0 +1,273 @@
+a {
+    text-decoration: none;
+    color : #337ab7;
+}
+li:hover {
+    background-color: #ccc;
+}
+.div {
+    display: inline-block;
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px !important;
+    font-weight: bold;
+    color: #8c1515;
+}
+
+.head {
+    display: flex;
+    margin-top: 20px;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.left-menu {
+    margin : 20px;
+    margin-right: 0px;
+}
+
+.menu {
+    background-color: #F2F1EB;
+    width: 300px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.avatar-small {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+.avatar-small img {
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 50%;
+    /* object-fit: cover; */ 
+}
+
+.list-option li {
+    padding-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+.list-option li a {
+    font-style: 13px;
+    line-height: 1;
+}
+
+.list-option li::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+}
+
+/* Main Content */
+
+.main-content {
+    margin: 20px;
+    width: calc(100% - 300px - 200px);
+    margin-left: 0;
+    font-family: sans-serif;
+}
+
+.info {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding : 10px;
+}
+
+.title {
+    display: flex;
+    font-family:Times, serif;
+    color : red;
+    font-weight: bold;
+    font-size: 14px;
+    /* justify-content: center; */
+    padding: 20px;
+    /* border-bottom: 1px solid #ccc; */
+}
+
+.main-title {
+    justify-content: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.sub-title {
+    padding-bottom: 25px;
+    border-bottom: 5px solid orange;
+    padding-left: 0px;
+}
+
+.info {
+    display: flex;
+}
+
+.big-avatar {
+    display: inline-block;
+    width: 250px;
+    border-radius: 50%;
+    margin-right: 20px;
+    text-align: center;
+    margin-left: 40px;
+}
+
+.big-avatar img {
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    object-fit: cover;
+}
+
+.big-avatar p {
+    display: inline-block;
+    width: 100%;
+    font-weight: bold;
+    font-style: 16px;
+}
+
+strong {
+    font-family: 'Times New Roman', Times, serif;
+    /* font-weight: 700; */
+    margin-right: 20px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.sub-info .content {
+    margin-top: 10px;
+    width: 400px;
+    line-height: 1.7;
+}
+
+.content span {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    margin-right: 20px;
+    font-size: 18px;
+    /* font-style: italic; */
+}
+
+.big-avatar img {
+    box-shadow: 5px 5px #ccc;
+}
+
+.noti {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+form {
+    display: flex;
+    height: 350px;
+}
+
+form .sub-info .form-item {
+    margin-top: 10px;
+    width: 400px;
+    line-height: 1.7;
+}
+
+input {
+    height: 20px;
+    width: 90%;
+}
+
+select {
+    height: 20px;
+    display: block;
+}
+
+.student-info-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.tool-edit{
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+}
+
+.tool-edit .tool {
+    width: 25%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.ok {
+    background-color: green;
+    color: white;
+}
+
+.cancel {
+    background-color: red;
+    color: white;
+}
+
+.reset {
+    background-color: blue;
+    color: white;
+}
+
+.ok:hover {
+    background-color: #4CAF50;
+}
+
+.cancel:hover {
+    background-color: #f39790;
+}
+
+.reset:hover {
+    background-color: #008CBA;
+}
+
+.edit-img {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#imageUpload {
+    height: 30px;
+}
+
+.edit-img .btn-upload-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #337ab7;
+    color: white;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#avatar {
+    width: 200px;
+}
